@@ -1,0 +1,20 @@
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+target/
+
+# Maven
+log/
+target/
+buildNumber.properties
+
+# Spring Boot
+.DS_Store
+.springbeans
+bin/
+build.log
+target/
+settings.xml
