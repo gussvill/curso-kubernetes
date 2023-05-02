@@ -1,6 +1,6 @@
 package org.aguzman.springcloud.msvc.usuarios.models.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "usuarios")
