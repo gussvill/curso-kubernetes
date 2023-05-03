@@ -17,7 +17,7 @@ public class UsuarioController {
     @Autowired
     private UsuarioService service;
 
-    @GetMapping
+    @GetMapping("/")
     public List<Usuario> listar() {
         return service.listar();
     }
@@ -80,6 +80,11 @@ public class UsuarioController {
             return ResponseEntity.noContent().build();
         }
         return ResponseEntity.notFound().build();
+    }
+
+    @GetMapping("/usuarios-por-curso")
+    public ResponseEntity<?> obtenerAlumnosPorCurso(@RequestParam List<Long> ids) {
+        return ResponseEntity.ok(service.listarPorIds(ids));
     }
 
     private ResponseEntity<Map<String, String>> validar(BindingResult result) {
