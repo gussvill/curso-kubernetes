@@ -2,8 +2,9 @@ package org.aguzman.springcloud.msvc.usuarios.models.entity;
 
 import jakarta.persistence.*;
 
+
 @Entity
-@Table(name = "usuarios")
+@Table(name="usuarios")
 public class Usuario {
 
     @Id
